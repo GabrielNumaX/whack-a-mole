@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Whack a Mole!</title>
+</head>
+
+<body>
+    <h1>Whack-a-mole!</h1>
+    <br />
+    Score:<span id="score" class="score">0</span>
+
+    <button onClick="startGame()" class="StartButton">Start!</button>
+
+    <div id="clock">Timer</div>
+
+    <div class="game">
+        <div id="hole1" class="hole hole1">
+            <div id="mole1" class="mole"></div>
+        </div>
+
+        <div id="hole2" class="hole hole2">
+            <div id="mole2" class="mole"></div>
+        </div>
+
+        <div id="hole3" class="hole hole3">
+            <div id="mole3" class="mole"></div>
+        </div>
+
+        <div id="hole4" class="hole hole4">
+            <div id="mole4" class="mole"></div>
+        </div>
+
+        <div id="hole5" class="hole hole5">
+            <div id="mole5" class="mole"></div>
+        </div>
+
+        <div id="hole6" class="hole hole6">
+            <div id="mole6" class="mole"></div>
+        </div>
+
+    </div>
+    <div id="winPopup">
+        You won! <br />
+        Score: <span id="winScore"> </span>
+        <button id="playAgainButton" class="PopupButton">Play Again</button>
+    </div>
+    <div id="losePopup">
+        Better Luck Next Time! <br />
+        Score: <span id="loseScore"> </span>
+        <button id='retryButton' class="PopupButton">Retry</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
